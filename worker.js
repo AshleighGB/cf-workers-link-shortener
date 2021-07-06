@@ -116,7 +116,7 @@ async function handleRequest(request) {
 
       var index = await fetch('https://raw.githubusercontent.com/AshleighGB/cf-workers-link-shortener/master/index.html', {
         "cf" : {
-          "cacheTtl" : 600,
+          "cacheTtl" : 360,
           "cacheKey" : request.url
         }
       });
