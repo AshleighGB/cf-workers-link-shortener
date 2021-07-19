@@ -11,9 +11,12 @@
     <title>Link Shortener</title>
   </head>
   <body>
-    <h1>Cloudflare Workers Link Shortener</h1>
+    <h1>Link Shortener<small>Powered by <a href="https://lmgtfy.app/?q=Cloudflare+workers">CF Workers</a></h1>
     <h2>Create a Link</h2>
-    <pre>$ curl https://smthn.sh/?new=https://example.com</pre>
+    <form action="/index.html" method="GET">
+      <input name="url" type="text"/>
+      <button type="submit">Create Link!</button>
+    </form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
